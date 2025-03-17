@@ -1,5 +1,8 @@
 # Top react memory game
 the live preview from here: https://kad5-memory-game.netlify.app/
+
+## purpose:
+
 managing state and use effect in a react app
 
 ## game logic:
