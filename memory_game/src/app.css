@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans";
+  font-weight: 500;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsl(0, 0%, 25%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+header {
+  height: 4rem;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 93%);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+  justify-content: space-between;
+}
+
+.controller {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  button {
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    border: 1px solid hsl(0, 0%, 83%);
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 93%);
+  }
+  button:hover {
+    background-color: hsl(0, 0%, 90%);
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+label:hover {
+  background-color: hsl(0, 0%, 93%);
+}
+
+label:has(input:checked) {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5rem;
+  border: 1px solid hsl(0, 0%, 83%);
+  padding: 0.25rem 0.25rem;
+  border-radius: 2rem;
+}
+
+.feedback {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.feedback p:first-of-type {
+  font-size: 2rem;
+  white-space: pre-wrap;
+}
+
+.feedback p:last-of-type {
+  font-size: 1.25rem;
+}
+
+.cards {
+  display: grid;
+  width: fit-content;
+  margin: auto;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  justify-self: center;
+  border-radius: 12px;
+  border: 1px solid lightgray;
+  padding: 0.67rem 0.67rem 0rem 0.67rem;
+  cursor: pointer;
+}
+
+.correct {
+  outline: 3px solid lightseagreen;
+}
+
+.false {
+  outline: 3px solid tomato;
+}
+
+footer {
+  margin-top: auto;
+  height: 3rem;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 93%);
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(0, 0%, 85%);
+}
