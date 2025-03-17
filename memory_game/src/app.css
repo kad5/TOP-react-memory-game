@@ -103,6 +103,7 @@ label:has(input:checked) {
   border: 1px solid lightgray;
   padding: 0.67rem 0.67rem 0rem 0.67rem;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .correct {

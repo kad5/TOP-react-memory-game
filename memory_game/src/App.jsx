@@ -27,7 +27,7 @@ export default function App() {
     setScore(0);
     SetIds([]);
     setActive(true);
-    setactiveMode((prev) => mode);
+    setactiveMode(() => mode);
     setMsg("Click a president\n👴");
   }
 
